@@ -4,6 +4,7 @@ Gson: https://github.com/google/gson
 JSoup: http://jsoup.org/
 
 To Run The Console Application 
+mvn compile
 mvn exec:java -Dexec.mainClass="org.sainsbury.com.Console"
 
 
