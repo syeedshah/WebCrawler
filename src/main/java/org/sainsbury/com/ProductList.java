@@ -19,11 +19,12 @@ public class ProductList {
 		this.products.remove(product);
 	}
 	
-	public double getTotalPrice(Product product){
-		for(Product price : products){
-			
+	public double getTotalPrice(){
+		double totalPrice = 0.00;
+		for(Product product : this.products){
+			totalPrice += product.getPrice();
 		}
-		return 0;
+		return totalPrice;
 	}
 	
 	public ArrayList<Product> toArrayList(){

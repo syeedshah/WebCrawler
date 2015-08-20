@@ -13,7 +13,8 @@ public class JsonParser {
 
 		Map output = new HashMap();
 		output.put("results", products.toArrayList());
-		output.put("total", 0);
+		output.put("total", products.getTotalPrice());
+		
 
 		//
 		// convert to json and prettyprint for output

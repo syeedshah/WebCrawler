@@ -16,7 +16,7 @@ public class Product {
 	}
 
 	public void setTitle(String title) {
-		this.title = title;
+		this.title = title.replaceAll("[^a-zA-Z0-9 ]","");
 	}
 
 	public String getDescription() {
@@ -24,7 +24,7 @@ public class Product {
 	}
 
 	public void setDescription(String description) {
-		this.description = description;
+		this.description = description.replaceAll("[^a-zA-Z0-9 ]","");
 	}
 
 	public double getPrice() {

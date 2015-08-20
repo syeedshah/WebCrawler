@@ -61,8 +61,7 @@ public class WebCrawler {
 			}
 		}
 
-		System.out.println("total : " + addTotalUnitPrice(pricePerUnit));
-		addTotalUnitPrice(pricePerUnit);
+		
 
 		return productList;
 
@@ -73,13 +72,6 @@ public class WebCrawler {
 		return size;
 	}
 
-	public String addTotalUnitPrice(String price) {
-		unitPrice = Double.parseDouble(price);
-		double test = totalUnitPrice + unitPrice;
-		String formattedPrice = String.format("%.02f", test);
-
-		return formattedPrice;
-	}
 
 	public void getProductUrls(String url) {
 		Document mainPageOfProductLinks;
